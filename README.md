@@ -31,6 +31,8 @@ docker run -d -p 8080:8080 -p 8754:8754 \
 	-e "HTML_SITE_LAT=MY_SITE_LAT" \
 	-e "HTML_SITE_LON=MY_SITE_LON" \
 	-e "HTML_SITE_NAME=MY_SITE_NAME" \
+	-e "DUMP1090_SITE_LAT=MY_SITE_LAT" \
+	-e "DUMP1090_SITE_LON=MY_SITE_LON" \
 	-e "PANORAMA_ID=MY_PANORAMA_ID" \
 	thomx/fr24feed-piaware
 ```
@@ -128,6 +130,18 @@ Example :
 | `PIAWARE_TEST=value`                  | `test`                   | `value`           | `piaware.conf`          |
 
 ## Dump1090
+
+| Environment Variable                  | Default value            |
+|---------------------------------------|--------------------------|
+| `DUMP1090_SITE_LAT`                   | `45.0`                   |
+| `DUMP1090_SITE_LON`                   | `9.0`                    |
+| `DUMP1090_ADDITIONAL_ARGS`            | ``                       |
+
+Ex : `-e "DUMP1090_SITE_LAT=45.0"`
+
+**Note** : you can add args to Dump1090 with `DUMP1090_ADDITIONAL_ARGS` ex : `-e "DUMP1090_ADDITIONAL_ARGS=--net-only"`
+
+## Webview
 ### Receiver location
 
 | Environment Variable                  | Default value            |
