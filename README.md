@@ -135,7 +135,7 @@ Example :
 |---------------------------------------|--------------------------|
 | `DUMP1090_SITE_LAT`                   | `45.0`                   |
 | `DUMP1090_SITE_LON`                   | `9.0`                    |
-| `DUMP1090_ADDITIONAL_ARGS`            | ``                       |
+| `DUMP1090_ADDITIONAL_ARGS`            |                          |
 
 Ex : `-e "DUMP1090_SITE_LAT=45.0"`
 
